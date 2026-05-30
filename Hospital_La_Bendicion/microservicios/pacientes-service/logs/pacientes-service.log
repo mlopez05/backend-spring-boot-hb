@@ -1,0 +1,427 @@
+'2026-05-29 16:05:24 {main} INFO  c.u.m.p.PacientesServiceApplication - Starting PacientesServiceApplication using Java 17.0.12 with PID 32004 (D:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service\target\classes started by Soporte in D:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service)
+''2026-05-29 16:05:24 {main} INFO  c.u.m.p.PacientesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+''2026-05-29 16:05:24 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+''2026-05-29 16:05:24 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=pacientes-service, profiles=[default], label=null, version=null, state=null
+''2026-05-29 16:05:26 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+''2026-05-29 16:05:27 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 505 ms. Found 3 JPA repository interfaces.
+''2026-05-29 16:05:28 {main} INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2f464458-1c48-3005-8536-12c12f869f78
+''2026-05-29 16:05:29 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+''2026-05-29 16:05:29 {main} INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+''2026-05-29 16:05:29 {main} INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+''2026-05-29 16:05:30 {main} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+''2026-05-29 16:05:30 {main} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5632 ms
+''2026-05-29 16:05:30 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+''2026-05-29 16:05:31 {main} INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8cb7185
+''2026-05-29 16:05:31 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+''2026-05-29 16:05:31 {main} INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+''2026-05-29 16:05:31 {main} INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+''2026-05-29 16:05:31 {main} INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+''2026-05-29 16:05:33 {main} INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+''2026-05-29 16:05:33 {main} WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+''2026-05-29 16:05:33 {main} INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+''2026-05-29 16:05:36 {main} INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+''2026-05-29 16:05:36 {main} INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+''2026-05-29 16:05:37 {main} WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+''2026-05-29 16:05:38 {main} INFO  o.s.c.o.FeignClientFactoryBean - For 'AUTH-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+''2026-05-29 16:05:40 {main} INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+''2026-05-29 16:05:40 {main} WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+''2026-05-29 16:05:40 {main} INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+''2026-05-29 16:05:40 {main} INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+''2026-05-29 16:05:40 {main} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 16:05:40 {main} INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+''2026-05-29 16:05:40 {main} INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+''2026-05-29 16:05:40 {main} INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+''2026-05-29 16:05:40 {main} INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+''2026-05-29 16:05:40 {main} INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+''2026-05-29 16:05:40 {main} INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+''2026-05-29 16:05:40 {main} INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+''2026-05-29 16:05:41 {main} INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+''2026-05-29 16:05:41 {main} INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+''2026-05-29 16:05:41 {main} INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+''2026-05-29 16:05:41 {main} INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1780092341597 with initial instances count: 2
+''2026-05-29 16:05:41 {main} INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PACIENTES-SERVICE with eureka with status UP
+''2026-05-29 16:05:41 {main} INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1780092341612, current=UP, previous=STARTING]
+''2026-05-29 16:05:41 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092: registering service...
+''2026-05-29 16:05:41 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+''2026-05-29 16:05:41 {main} INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+''2026-05-29 16:05:41 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092 - registration status: 204
+''2026-05-29 16:05:42 {main} INFO  c.u.m.p.PacientesServiceApplication - Started PacientesServiceApplication in 20.836 seconds (process running for 22.834)
+''2026-05-29 16:10:40 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 16:15:40 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 16:20:41 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 16:21:44 {http-nio-8092-exec-2} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+''2026-05-29 16:21:44 {http-nio-8092-exec-2} INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+''2026-05-29 16:21:44 {http-nio-8092-exec-2} INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 136 ms
+''2026-05-29 16:25:41 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 16:30:41 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 16:35:41 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 16:40:41 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 16:45:41 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 17:08:51 {main} INFO  c.u.m.p.PacientesServiceApplication - Starting PacientesServiceApplication using Java 17.0.12 with PID 26328 (D:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service\target\classes started by Soporte in d:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service)
+''2026-05-29 17:08:51 {main} INFO  c.u.m.p.PacientesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+''2026-05-29 17:08:51 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+''2026-05-29 17:08:51 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=pacientes-service, profiles=[default], label=null, version=null, state=null
+''2026-05-29 17:08:53 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+''2026-05-29 17:08:54 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 418 ms. Found 3 JPA repository interfaces.
+''2026-05-29 17:08:55 {main} INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2f464458-1c48-3005-8536-12c12f869f78
+''2026-05-29 17:08:56 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+''2026-05-29 17:08:56 {main} INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+''2026-05-29 17:08:56 {main} INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+''2026-05-29 17:08:56 {main} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+''2026-05-29 17:08:56 {main} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4362 ms
+''2026-05-29 17:08:56 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+''2026-05-29 17:08:57 {main} INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2c1a8529
+''2026-05-29 17:08:57 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+''2026-05-29 17:08:57 {main} INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+''2026-05-29 17:08:57 {main} INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+''2026-05-29 17:08:57 {main} INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+''2026-05-29 17:08:58 {main} INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+''2026-05-29 17:08:59 {main} WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+''2026-05-29 17:08:59 {main} INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+''2026-05-29 17:09:01 {main} INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+''2026-05-29 17:09:01 {main} INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+''2026-05-29 17:09:03 {main} WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+''2026-05-29 17:09:04 {main} INFO  o.s.c.o.FeignClientFactoryBean - For 'AUTH-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+''2026-05-29 17:09:06 {main} INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+''2026-05-29 17:09:06 {main} WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+''2026-05-29 17:09:06 {main} INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+''2026-05-29 17:09:06 {main} INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+''2026-05-29 17:09:06 {main} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 17:09:06 {main} INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+''2026-05-29 17:09:06 {main} INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+''2026-05-29 17:09:06 {main} INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+''2026-05-29 17:09:06 {main} INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+''2026-05-29 17:09:06 {main} INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+''2026-05-29 17:09:06 {main} INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+''2026-05-29 17:09:06 {main} INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+''2026-05-29 17:09:07 {main} INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+''2026-05-29 17:09:07 {main} INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+''2026-05-29 17:09:07 {main} INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+''2026-05-29 17:09:07 {main} INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1780096147693 with initial instances count: 2
+''2026-05-29 17:09:07 {main} INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PACIENTES-SERVICE with eureka with status UP
+''2026-05-29 17:09:07 {main} INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1780096147715, current=UP, previous=STARTING]
+''2026-05-29 17:09:07 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092: registering service...
+''2026-05-29 17:09:07 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+''2026-05-29 17:09:07 {main} INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+''2026-05-29 17:09:07 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092 - registration status: 204
+''2026-05-29 17:09:08 {main} INFO  c.u.m.p.PacientesServiceApplication - Started PacientesServiceApplication in 18.801 seconds (process running for 20.461)
+''2026-05-29 17:13:25 {http-nio-8092-exec-3} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+''2026-05-29 17:13:25 {http-nio-8092-exec-3} INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+''2026-05-29 17:13:25 {http-nio-8092-exec-3} INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 208 ms
+''2026-05-29 17:14:06 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 17:19:06 {main} INFO  c.u.m.p.PacientesServiceApplication - Starting PacientesServiceApplication using Java 17.0.12 with PID 21600 (D:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service\target\classes started by Soporte in d:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service)
+''2026-05-29 17:19:06 {main} INFO  c.u.m.p.PacientesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+''2026-05-29 17:19:06 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+''2026-05-29 17:19:06 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=pacientes-service, profiles=[default], label=null, version=null, state=null
+''2026-05-29 17:19:08 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+''2026-05-29 17:19:09 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 424 ms. Found 3 JPA repository interfaces.
+''2026-05-29 17:19:10 {main} INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2f464458-1c48-3005-8536-12c12f869f78
+''2026-05-29 17:19:11 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+''2026-05-29 17:19:11 {main} INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+''2026-05-29 17:19:11 {main} INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+''2026-05-29 17:19:11 {main} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+''2026-05-29 17:19:11 {main} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5047 ms
+''2026-05-29 17:19:12 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+''2026-05-29 17:19:12 {main} INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31880efa
+''2026-05-29 17:19:12 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+''2026-05-29 17:19:12 {main} INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+''2026-05-29 17:19:12 {main} INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+''2026-05-29 17:19:13 {main} INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+''2026-05-29 17:19:14 {main} INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+''2026-05-29 17:19:14 {main} WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+''2026-05-29 17:19:14 {main} INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+''2026-05-29 17:19:17 {main} INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+''2026-05-29 17:19:17 {main} INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+''2026-05-29 17:19:18 {main} WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+''2026-05-29 17:19:19 {main} INFO  o.s.c.o.FeignClientFactoryBean - For 'AUTH-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+''2026-05-29 17:19:21 {main} INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+''2026-05-29 17:19:21 {main} WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+''2026-05-29 17:19:21 {main} INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+''2026-05-29 17:19:21 {main} INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+''2026-05-29 17:19:21 {main} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 17:19:21 {main} INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+''2026-05-29 17:19:21 {main} INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+''2026-05-29 17:19:21 {main} INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+''2026-05-29 17:19:21 {main} INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+''2026-05-29 17:19:21 {main} INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+''2026-05-29 17:19:21 {main} INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+''2026-05-29 17:19:21 {main} INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+''2026-05-29 17:19:22 {main} INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+''2026-05-29 17:19:22 {main} INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+''2026-05-29 17:19:22 {main} INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+''2026-05-29 17:19:22 {main} INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1780096762703 with initial instances count: 7
+''2026-05-29 17:19:22 {main} INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PACIENTES-SERVICE with eureka with status UP
+''2026-05-29 17:19:22 {main} INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1780096762716, current=UP, previous=STARTING]
+''2026-05-29 17:19:22 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092: registering service...
+''2026-05-29 17:19:22 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+''2026-05-29 17:19:22 {main} INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+''2026-05-29 17:19:22 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092 - registration status: 204
+''2026-05-29 17:19:22 {main} INFO  c.u.m.p.PacientesServiceApplication - Started PacientesServiceApplication in 20.21 seconds (process running for 22.065)
+''2026-05-29 17:20:31 {http-nio-8092-exec-2} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+''2026-05-29 17:20:31 {http-nio-8092-exec-2} INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+''2026-05-29 17:20:31 {http-nio-8092-exec-2} INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 39 ms
+''2026-05-29 17:24:21 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 17:29:21 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 17:34:21 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 17:39:21 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 20:55:19 {main} INFO  c.u.m.p.PacientesServiceApplication - Starting PacientesServiceApplication using Java 17.0.12 with PID 34500 (D:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service\target\classes started by Soporte in d:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service)
+''2026-05-29 20:55:19 {main} INFO  c.u.m.p.PacientesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+''2026-05-29 20:55:19 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+''2026-05-29 20:55:19 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=pacientes-service, profiles=[default], label=null, version=null, state=null
+''2026-05-29 20:55:21 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+''2026-05-29 20:55:22 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 586 ms. Found 3 JPA repository interfaces.
+''2026-05-29 20:55:23 {main} INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2f464458-1c48-3005-8536-12c12f869f78
+''2026-05-29 20:55:25 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+''2026-05-29 20:55:25 {main} INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+''2026-05-29 20:55:25 {main} INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+''2026-05-29 20:55:25 {main} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+''2026-05-29 20:55:25 {main} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5924 ms
+''2026-05-29 20:55:25 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+''2026-05-29 20:55:26 {main} INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@77f03916
+''2026-05-29 20:55:26 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+''2026-05-29 20:55:26 {main} INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+''2026-05-29 20:55:27 {main} INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+''2026-05-29 20:55:27 {main} INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+''2026-05-29 20:55:29 {main} INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+''2026-05-29 20:55:29 {main} WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+''2026-05-29 20:55:29 {main} INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+''2026-05-29 20:55:32 {main} INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+''2026-05-29 20:55:32 {main} INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+''2026-05-29 20:55:33 {main} WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+''2026-05-29 20:55:33 {main} INFO  o.s.c.o.FeignClientFactoryBean - For 'AUTH-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+''2026-05-29 20:55:36 {main} INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+''2026-05-29 20:55:36 {main} WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+''2026-05-29 20:55:36 {main} INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+''2026-05-29 20:55:36 {main} INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+''2026-05-29 20:55:36 {main} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 20:55:36 {main} INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+''2026-05-29 20:55:36 {main} INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+''2026-05-29 20:55:36 {main} INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+''2026-05-29 20:55:36 {main} INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+''2026-05-29 20:55:36 {main} INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+''2026-05-29 20:55:36 {main} INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+''2026-05-29 20:55:36 {main} INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+''2026-05-29 20:55:37 {main} INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+''2026-05-29 20:55:37 {main} INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+''2026-05-29 20:55:37 {main} INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+''2026-05-29 20:55:37 {main} INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1780109737605 with initial instances count: 2
+''2026-05-29 20:55:37 {main} INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PACIENTES-SERVICE with eureka with status UP
+''2026-05-29 20:55:37 {main} INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1780109737618, current=UP, previous=STARTING]
+''2026-05-29 20:55:37 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092: registering service...
+''2026-05-29 20:55:37 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+''2026-05-29 20:55:37 {main} INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+''2026-05-29 20:55:37 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092 - registration status: 204
+''2026-05-29 20:55:38 {main} INFO  c.u.m.p.PacientesServiceApplication - Started PacientesServiceApplication in 21.958 seconds (process running for 24.088)
+''2026-05-29 20:56:39 {http-nio-8092-exec-3} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+''2026-05-29 20:56:39 {http-nio-8092-exec-3} INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+''2026-05-29 20:56:39 {http-nio-8092-exec-3} INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+''2026-05-29 21:00:36 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 21:19:22 {main} INFO  c.u.m.p.PacientesServiceApplication - Starting PacientesServiceApplication using Java 17.0.12 with PID 19696 (D:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service\target\classes started by Soporte in d:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service)
+''2026-05-29 21:19:22 {main} INFO  c.u.m.p.PacientesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+''2026-05-29 21:19:22 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+''2026-05-29 21:19:22 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=pacientes-service, profiles=[default], label=null, version=null, state=null
+''2026-05-29 21:19:26 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+''2026-05-29 21:19:26 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 639 ms. Found 3 JPA repository interfaces.
+''2026-05-29 21:19:27 {main} INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2f464458-1c48-3005-8536-12c12f869f78
+''2026-05-29 21:19:31 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+''2026-05-29 21:19:31 {main} INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+''2026-05-29 21:19:31 {main} INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+''2026-05-29 21:19:31 {main} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+''2026-05-29 21:19:31 {main} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9084 ms
+''2026-05-29 21:19:32 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+''2026-05-29 21:19:34 {main} INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@356fa0d1
+''2026-05-29 21:19:34 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+''2026-05-29 21:19:34 {main} INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+''2026-05-29 21:19:34 {main} INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+''2026-05-29 21:19:35 {main} INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+''2026-05-29 21:19:36 {main} INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+''2026-05-29 21:19:37 {main} WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+''2026-05-29 21:19:37 {main} INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+''2026-05-29 21:19:40 {main} INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+''2026-05-29 21:19:40 {main} INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+''2026-05-29 21:19:42 {main} WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+''2026-05-29 21:19:43 {main} INFO  o.s.c.o.FeignClientFactoryBean - For 'AUTH-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+''2026-05-29 21:19:46 {main} INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+''2026-05-29 21:19:46 {main} WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+''2026-05-29 21:19:46 {main} INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+''2026-05-29 21:19:46 {main} INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+''2026-05-29 21:19:46 {main} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 21:19:46 {main} INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+''2026-05-29 21:19:46 {main} INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+''2026-05-29 21:19:46 {main} INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+''2026-05-29 21:19:46 {main} INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+''2026-05-29 21:19:46 {main} INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+''2026-05-29 21:19:46 {main} INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+''2026-05-29 21:19:46 {main} INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+''2026-05-29 21:19:47 {main} INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+''2026-05-29 21:19:47 {main} INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+''2026-05-29 21:19:47 {main} INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+''2026-05-29 21:19:47 {main} INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1780111187574 with initial instances count: 2
+''2026-05-29 21:19:47 {main} INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PACIENTES-SERVICE with eureka with status UP
+''2026-05-29 21:19:47 {main} INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1780111187597, current=UP, previous=STARTING]
+''2026-05-29 21:19:47 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092: registering service...
+''2026-05-29 21:19:47 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+''2026-05-29 21:19:47 {main} INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+''2026-05-29 21:19:47 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092 - registration status: 204
+''2026-05-29 21:19:48 {main} INFO  c.u.m.p.PacientesServiceApplication - Started PacientesServiceApplication in 30.996 seconds (process running for 34.909)
+''2026-05-29 21:20:29 {http-nio-8092-exec-2} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+''2026-05-29 21:20:29 {http-nio-8092-exec-2} INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+''2026-05-29 21:20:29 {http-nio-8092-exec-2} INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+''2026-05-29 21:24:46 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 21:29:46 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 21:34:46 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 21:39:46 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 21:44:46 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 21:49:46 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 21:53:26 {main} INFO  c.u.m.p.PacientesServiceApplication - Starting PacientesServiceApplication using Java 17.0.12 with PID 35908 (D:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service\target\classes started by Soporte in d:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service)
+''2026-05-29 21:53:26 {main} INFO  c.u.m.p.PacientesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+''2026-05-29 21:53:26 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+''2026-05-29 21:53:26 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=pacientes-service, profiles=[default], label=null, version=null, state=null
+''2026-05-29 21:53:30 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+''2026-05-29 21:53:30 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 601 ms. Found 3 JPA repository interfaces.
+''2026-05-29 21:53:31 {main} INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2f464458-1c48-3005-8536-12c12f869f78
+''2026-05-29 21:53:33 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+''2026-05-29 21:53:33 {main} INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+''2026-05-29 21:53:33 {main} INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+''2026-05-29 21:53:33 {main} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+''2026-05-29 21:53:33 {main} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6357 ms
+''2026-05-29 21:53:33 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+''2026-05-29 21:53:34 {main} INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@45e639ee
+''2026-05-29 21:53:34 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+''2026-05-29 21:53:34 {main} INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+''2026-05-29 21:53:35 {main} INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+''2026-05-29 21:53:35 {main} INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+''2026-05-29 21:53:36 {main} INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+''2026-05-29 21:53:37 {main} WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+''2026-05-29 21:53:37 {main} INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+''2026-05-29 21:53:39 {main} INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+''2026-05-29 21:53:39 {main} INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+''2026-05-29 21:53:41 {main} WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+''2026-05-29 21:53:41 {main} INFO  o.s.c.o.FeignClientFactoryBean - For 'AUTH-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+''2026-05-29 21:53:44 {main} INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+''2026-05-29 21:53:45 {main} WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+''2026-05-29 21:53:45 {main} INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+''2026-05-29 21:53:45 {main} INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+''2026-05-29 21:53:45 {main} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 21:53:45 {main} INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+''2026-05-29 21:53:45 {main} INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+''2026-05-29 21:53:45 {main} INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+''2026-05-29 21:53:45 {main} INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+''2026-05-29 21:53:45 {main} INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+''2026-05-29 21:53:45 {main} INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+''2026-05-29 21:53:45 {main} INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+''2026-05-29 21:53:46 {main} INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+''2026-05-29 21:53:46 {main} INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+''2026-05-29 21:53:46 {main} INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+''2026-05-29 21:53:46 {main} INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1780113226105 with initial instances count: 7
+''2026-05-29 21:53:46 {main} INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PACIENTES-SERVICE with eureka with status UP
+''2026-05-29 21:53:46 {main} INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1780113226137, current=UP, previous=STARTING]
+''2026-05-29 21:53:46 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092: registering service...
+''2026-05-29 21:53:46 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+''2026-05-29 21:53:46 {main} INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+''2026-05-29 21:53:46 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092 - registration status: 204
+''2026-05-29 21:53:46 {main} INFO  c.u.m.p.PacientesServiceApplication - Started PacientesServiceApplication in 24.014 seconds (process running for 26.114)
+''2026-05-29 21:54:51 {http-nio-8092-exec-3} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+''2026-05-29 21:54:51 {http-nio-8092-exec-3} INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+''2026-05-29 21:54:51 {http-nio-8092-exec-3} INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+''2026-05-29 21:58:45 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 22:03:46 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 22:08:46 {AsyncResolver-bootstrap-executor-%d} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 22:55:07 {main} INFO  c.u.m.p.PacientesServiceApplication - Starting PacientesServiceApplication using Java 17.0.12 with PID 22412 (D:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service\target\classes started by Soporte in d:\Proyecto - Progra 3\Revision Final\Proyecto-Final-Progra-3\Backend(Spring Boot)\Proyecto-Final-Progra-3-master\Hospital_La_Bendicion\microservicios\pacientes-service)
+''2026-05-29 22:55:07 {main} INFO  c.u.m.p.PacientesServiceApplication - No active profile set, falling back to 1 default profile: "default"
+''2026-05-29 22:55:07 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+''2026-05-29 22:55:07 {main} INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=pacientes-service, profiles=[default], label=null, version=null, state=null
+''2026-05-29 22:55:09 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+''2026-05-29 22:55:09 {main} INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 464 ms. Found 3 JPA repository interfaces.
+''2026-05-29 22:55:10 {main} INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2f464458-1c48-3005-8536-12c12f869f78
+''2026-05-29 22:55:11 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+''2026-05-29 22:55:11 {main} INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+''2026-05-29 22:55:11 {main} INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.54]
+''2026-05-29 22:55:11 {main} INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+''2026-05-29 22:55:11 {main} INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4472 ms
+''2026-05-29 22:55:12 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+''2026-05-29 22:55:12 {main} INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49d543a9
+''2026-05-29 22:55:12 {main} INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+''2026-05-29 22:55:12 {main} INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+''2026-05-29 22:55:12 {main} INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.49.Final
+''2026-05-29 22:55:12 {main} INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+''2026-05-29 22:55:13 {main} INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+''2026-05-29 22:55:14 {main} WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+''2026-05-29 22:55:14 {main} INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+''2026-05-29 22:55:16 {main} INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+''2026-05-29 22:55:16 {main} INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+''2026-05-29 22:55:17 {main} WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+''2026-05-29 22:55:17 {main} INFO  o.s.c.o.FeignClientFactoryBean - For 'AUTH-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+''2026-05-29 22:55:18 {main} INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+''2026-05-29 22:55:19 {main} WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+''2026-05-29 22:55:19 {main} INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+''2026-05-29 22:55:19 {main} INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+''2026-05-29 22:55:19 {main} INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+''2026-05-29 22:55:19 {main} INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+''2026-05-29 22:55:19 {main} INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+''2026-05-29 22:55:19 {main} INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+''2026-05-29 22:55:19 {main} INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+''2026-05-29 22:55:19 {main} INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+''2026-05-29 22:55:19 {main} INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+''2026-05-29 22:55:19 {main} INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+''2026-05-29 22:55:19 {main} INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+''2026-05-29 22:55:19 {main} INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+''2026-05-29 22:55:19 {main} INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+''2026-05-29 22:55:19 {main} INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1780116919925 with initial instances count: 2
+''2026-05-29 22:55:19 {main} INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PACIENTES-SERVICE with eureka with status UP
+''2026-05-29 22:55:19 {main} INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1780116919937, current=UP, previous=STARTING]
+''2026-05-29 22:55:19 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092: registering service...
+''2026-05-29 22:55:19 {main} INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+''2026-05-29 22:55:19 {main} INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+''2026-05-29 22:55:20 {DiscoveryClient-InstanceInfoReplicator-%d} INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PACIENTES-SERVICE/VITO:pacientes-service:8092 - registration status: 204
+''2026-05-29 22:55:20 {main} INFO  c.u.m.p.PacientesServiceApplication - Started PacientesServiceApplication in 15.21 seconds (process running for 16.612)
+'
